@@ -3,9 +3,6 @@ import requests
 from tkinter import font
 from PIL import Image, ImageTk
 
-HEIGHT = 500
-WIDTH = 600
-
 
 
 def format_response(weather):
@@ -43,7 +40,7 @@ def open_image(icon):
 
 root = tk.Tk()
 
-canvas = tk.Canvas(root, height=HEIGHT, width=WIDTH)
+canvas = tk.Canvas(root, height=500, width=600)
 canvas.pack()
 
 background_image = tk.PhotoImage(file='e.png')
